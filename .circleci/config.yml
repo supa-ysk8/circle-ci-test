@@ -39,16 +39,16 @@ jobs:
             - v1-dependencies-
 
       - run:        #追加
-        name: setup bundler
-        command: |
-          sudo gem update --system
-          sudo gem uninstall bundler
-          sudo rm /usr/local/bin/bundle
-          sudo rm /usr/local/bin/bundler
-          sudo gem install bundler   
+          name: setup bundler
+          command: |
+            sudo gem update --system
+            sudo gem uninstall bundler
+            sudo rm /usr/local/bin/bundle
+            sudo rm /usr/local/bin/bundler
+            sudo gem install bundler
 
 
-          
+
       - run:
           name: install dependencies
           command: |
